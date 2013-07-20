@@ -11,7 +11,7 @@ import org.junit.Test;
  * @author mrice
  *
  */
-public class TestRawCollectionTypes {
+public class Test1RawCollectionTypes {
 
 	/**
 	 * This is a completely unremarkable test, but it proves that the first point of
