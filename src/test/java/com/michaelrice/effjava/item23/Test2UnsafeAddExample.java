@@ -11,6 +11,9 @@ public class Test2UnsafeAddExample {
 	 * though we are using generics to catch cast exceptions at runtime
 	 * we still have problems because somewhere in the method stack
 	 * we don't deal with them safely and we still get the RuntimeException.
+	 * 
+	 * In fact, we're looking for the runtime exception on the test.
+	 * 
 	 */
 	@Test(expected=ClassCastException.class)
 	public void test() {

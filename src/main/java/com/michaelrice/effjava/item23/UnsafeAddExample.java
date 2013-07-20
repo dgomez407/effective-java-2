@@ -24,6 +24,13 @@ public class UnsafeAddExample {
 	 * type even though the caller uses a parameterized type.
 	 *  
 	 * Luckily, the compiler and IDE throw warnings about this these days.
+	 * 
+	 * Note the @SupressWarnings tag: as Bloch puts it, "in this case we
+	 * ignored the compiler warning and paid the price."
+	 * 
+	 * This seems artificial, but it's easy to slip into this mistake when
+	 * you're trying to build a reusable module.
+	 * 
 	 */
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	private void unsafeAdd(List listOfStrings, Integer integer) {
